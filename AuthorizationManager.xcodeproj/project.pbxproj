@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		84EC841921E39CEC00D72BD4 /* AuthorizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EC841721E39CEC00D72BD4 /* AuthorizationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84EC842221E3B7A300D72BD4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 84EC842121E3B7A300D72BD4 /* LICENSE */; };
+		84EC842421E3B7BB00D72BD4 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC842321E3B7BB00D72BD4 /* Package.swift */; };
+		84EC842621E3B85600D72BD4 /* AuthorizationManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 84EC842521E3B85600D72BD4 /* AuthorizationManager.podspec */; };
+		84EC842821E3B8AE00D72BD4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84EC842721E3B8AE00D72BD4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84EC841421E39CEC00D72BD4 /* AuthorizationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EC841721E39CEC00D72BD4 /* AuthorizationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationManager.h; sourceTree = "<group>"; };
 		84EC841821E39CEC00D72BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EC842121E3B7A300D72BD4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		84EC842321E3B7BB00D72BD4 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		84EC842521E3B85600D72BD4 /* AuthorizationManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AuthorizationManager.podspec; sourceTree = "<group>"; };
+		84EC842721E3B8AE00D72BD4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +38,10 @@
 		84EC840A21E39CEC00D72BD4 = {
 			isa = PBXGroup;
 			children = (
+				84EC842721E3B8AE00D72BD4 /* README.md */,
+				84EC842521E3B85600D72BD4 /* AuthorizationManager.podspec */,
+				84EC842321E3B7BB00D72BD4 /* Package.swift */,
+				84EC842121E3B7A300D72BD4 /* LICENSE */,
 				84EC841621E39CEC00D72BD4 /* AuthorizationManager */,
 				84EC841521E39CEC00D72BD4 /* Products */,
 			);
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					84EC841321E39CEC00D72BD4 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +133,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC842821E3B8AE00D72BD4 /* README.md in Resources */,
+				84EC842621E3B85600D72BD4 /* AuthorizationManager.podspec in Resources */,
+				84EC842221E3B7A300D72BD4 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EC842421E3B7BB00D72BD4 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +278,7 @@
 		84EC841D21E39CEC00D72BD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ancotov.AuthorizationManager;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +305,7 @@
 		84EC841E21E39CEC00D72BD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
