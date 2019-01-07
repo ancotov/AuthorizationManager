@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AuthorizationManager.swift>
 
 //! Project version number for AuthorizationManager.
 FOUNDATION_EXPORT double AuthorizationManagerVersionNumber;
