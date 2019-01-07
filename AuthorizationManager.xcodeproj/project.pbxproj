@@ -20,6 +20,7 @@
 		84EC842121E3B7A300D72BD4 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		84EC842521E3B85600D72BD4 /* AuthorizationManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AuthorizationManager.podspec; sourceTree = "<group>"; };
 		84EC842721E3B8AE00D72BD4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		84EC842B21E3C73C00D72BD4 /* Defaults.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Defaults.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,10 +37,11 @@
 		84EC840A21E39CEC00D72BD4 = {
 			isa = PBXGroup;
 			children = (
+				84EC842921E3C65000D72BD4 /* Sources */,
+				84EC842A21E3C69400D72BD4 /* Supporting Files */,
 				84EC842721E3B8AE00D72BD4 /* README.md */,
 				84EC842521E3B85600D72BD4 /* AuthorizationManager.podspec */,
 				84EC842121E3B7A300D72BD4 /* LICENSE */,
-				84EC841621E39CEC00D72BD4 /* AuthorizationManager */,
 				84EC841521E39CEC00D72BD4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,13 +54,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		84EC841621E39CEC00D72BD4 /* AuthorizationManager */ = {
+		84EC842921E3C65000D72BD4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
 				84EC841721E39CEC00D72BD4 /* AuthorizationManager.h */,
-				84EC841821E39CEC00D72BD4 /* Info.plist */,
 			);
-			path = AuthorizationManager;
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		84EC842A21E3C69400D72BD4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84EC841821E39CEC00D72BD4 /* Info.plist */,
+				84EC842B21E3C73C00D72BD4 /* Defaults.xcconfig */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,7 +292,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AuthorizationManager/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,7 +319,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AuthorizationManager/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

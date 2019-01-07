@@ -8,7 +8,8 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "ancotov" => "ancot@yandex.com" }
   spec.source       = { :git => "https://github.com/ancotov/AuthorizationManager.git", :commit => "8738f523fa21ab5e6027df203393de8839f63b8b" }
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  #spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  s.source_files = "Sources/**/*"
   spec.exclude_files = "Classes/Exclude"
   # spec.public_header_files = "Classes/**/*.h"
   # spec.resource  = "icon.png"
