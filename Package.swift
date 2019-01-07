@@ -6,6 +6,7 @@
 //  Copyright © 2019 ancotov. All rights reserved.
 //
 
-let package = Package(
-    name: "AuthorizationManager"
-)
+
+//let package = Package(
+//    name: "AuthorizationManager"
+//)
