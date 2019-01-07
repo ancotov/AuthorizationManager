@@ -7,13 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84EAA27421E3D870007FE967 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA27221E3D870007FE967 /* AuthViewController.swift */; };
+		84EAA27521E3D870007FE967 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EAA27321E3D870007FE967 /* AuthViewController.xib */; };
+		84EAA27721E3D8E8007FE967 /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EAA27621E3D8E8007FE967 /* SignInView.xib */; };
+		84EAA27921E3D90A007FE967 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EAA27821E3D90A007FE967 /* SignInView.swift */; };
+		84EAA28021E3DB8D007FE967 /* logo_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 84EAA27F21E3DB8D007FE967 /* logo_green.png */; };
 		84EC841921E39CEC00D72BD4 /* AuthorizationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 84EC841721E39CEC00D72BD4 /* AuthorizationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		84EC842221E3B7A300D72BD4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 84EC842121E3B7A300D72BD4 /* LICENSE */; };
 		84EC842621E3B85600D72BD4 /* AuthorizationManager.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 84EC842521E3B85600D72BD4 /* AuthorizationManager.podspec */; };
 		84EC842821E3B8AE00D72BD4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84EC842721E3B8AE00D72BD4 /* README.md */; };
+		84EC842D21E3CA6500D72BD4 /* AuthorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC842C21E3CA6500D72BD4 /* AuthorizationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84EAA27221E3D870007FE967 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		84EAA27321E3D870007FE967 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		84EAA27621E3D8E8007FE967 /* SignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		84EAA27821E3D90A007FE967 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		84EAA27F21E3DB8D007FE967 /* logo_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_green.png; sourceTree = "<group>"; };
 		84EC841421E39CEC00D72BD4 /* AuthorizationManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AuthorizationManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EC841721E39CEC00D72BD4 /* AuthorizationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthorizationManager.h; sourceTree = "<group>"; };
 		84EC841821E39CEC00D72BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -21,6 +32,7 @@
 		84EC842521E3B85600D72BD4 /* AuthorizationManager.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AuthorizationManager.podspec; sourceTree = "<group>"; };
 		84EC842721E3B8AE00D72BD4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		84EC842B21E3C73C00D72BD4 /* Defaults.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Defaults.xcconfig; sourceTree = "<group>"; };
+		84EC842C21E3CA6500D72BD4 /* AuthorizationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,11 +46,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84EAA26F21E3D6C3007FE967 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84EAA27621E3D8E8007FE967 /* SignInView.xib */,
+				84EAA27821E3D90A007FE967 /* SignInView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		84EAA27A21E3D933007FE967 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		84EC840A21E39CEC00D72BD4 = {
 			isa = PBXGroup;
 			children = (
 				84EC842921E3C65000D72BD4 /* Sources */,
+				84EC842E21E3CC1D00D72BD4 /* Resources */,
 				84EC842A21E3C69400D72BD4 /* Supporting Files */,
+				84EAA27A21E3D933007FE967 /* Tests */,
 				84EC842721E3B8AE00D72BD4 /* README.md */,
 				84EC842521E3B85600D72BD4 /* AuthorizationManager.podspec */,
 				84EC842121E3B7A300D72BD4 /* LICENSE */,
@@ -57,7 +87,10 @@
 		84EC842921E3C65000D72BD4 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				84EC842F21E3CE4200D72BD4 /* ViewControllers */,
+				84EAA26F21E3D6C3007FE967 /* Views */,
 				84EC841721E39CEC00D72BD4 /* AuthorizationManager.h */,
+				84EC842C21E3CA6500D72BD4 /* AuthorizationManager.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -69,6 +102,23 @@
 				84EC842B21E3C73C00D72BD4 /* Defaults.xcconfig */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84EC842E21E3CC1D00D72BD4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				84EAA27F21E3DB8D007FE967 /* logo_green.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84EC842F21E3CE4200D72BD4 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				84EAA27221E3D870007FE967 /* AuthViewController.swift */,
+				84EAA27321E3D870007FE967 /* AuthViewController.xib */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +190,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EAA28021E3DB8D007FE967 /* logo_green.png in Resources */,
+				84EAA27521E3D870007FE967 /* AuthViewController.xib in Resources */,
 				84EC842821E3B8AE00D72BD4 /* README.md in Resources */,
 				84EC842621E3B85600D72BD4 /* AuthorizationManager.podspec in Resources */,
 				84EC842221E3B7A300D72BD4 /* LICENSE in Resources */,
+				84EAA27721E3D8E8007FE967 /* SignInView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EAA27921E3D90A007FE967 /* SignInView.swift in Sources */,
+				84EAA27421E3D870007FE967 /* AuthViewController.swift in Sources */,
+				84EC842D21E3CA6500D72BD4 /* AuthorizationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
