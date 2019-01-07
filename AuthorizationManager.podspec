@@ -4,61 +4,15 @@ Pod::Spec.new do |spec|
   spec.version      = "1.0.1"
   spec.summary      = "Authorization manager library"
   spec.description  = "Authorization manager library"
-
   spec.homepage     = "https://github.com/ancotov/AuthorizationManager"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "ancotov" => "ancot@yandex.com" }
-
-  # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If this Pod runs only on iOS or OS X, then specify the platform and
-  #  the deployment target. You can optionally include the target after the platform.
-  #
-
-  # spec.platform     = :ios
-  # spec.platform     = :ios, "5.0"
-
-  #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
-  # spec.watchos.deployment_target = "2.0"
-  # spec.tvos.deployment_target = "9.0"
-
-
-  # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Specify the location from where the source should be retrieved.
-  #  Supports git, hg, bzr, svn and HTTP.
-  #
-
   spec.source       = { :git => "https://github.com/ancotov/AuthorizationManager.git", :commit => "8738f523fa21ab5e6027df203393de8839f63b8b" }
-
-
-  # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  CocoaPods is smart about how it includes source code. For source files
-  #  giving a folder will include any swift, h, m, mm, c & cpp files.
-  #  For header files it will include any header in the folder.
-  #  Not including the public_header_files will make all headers public.
-  #
-
   spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
-
   # spec.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
-
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
 
